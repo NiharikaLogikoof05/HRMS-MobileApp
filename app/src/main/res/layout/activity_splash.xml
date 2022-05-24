@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8fbfc">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:id="@+id/layskip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_20sdp">
+        <TextView
+            android:id="@+id/btn_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:fontFamily="@font/lato_semibold"
+            android:text="Skip"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="#34444d"
+            android:textFontWeight="500" />
+        <ImageView
+            android:layout_width="@dimen/_11sdp"
+            android:layout_height="@dimen/_11sdp"
+            android:src="@drawable/next"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/btn_skip"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/lay_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_20sdp">
+        <ImageView
+            android:id="@+id/iv_backbtn"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/nextbtn"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/btn_next"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@null"
+            android:text="next"
+            android:textColor="@android:color/transparent" />
+    </RelativeLayout>
+</RelativeLayout>

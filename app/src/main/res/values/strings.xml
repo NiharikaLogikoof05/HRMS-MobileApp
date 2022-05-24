@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HRMS</string>
+    <string name="google_play_services">Google play services are not available.</string>
+    <string name="skip">Skip</string>
+</resources>
